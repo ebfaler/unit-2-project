@@ -1,0 +1,189 @@
+* {
+ box-sizing: border-box;
+}
+
+
+
+
+/*---Layout Containers---*/
+
+#navbar, main {
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+
+#navbar {
+
+ background-color: lightskyblue;
+ font-family: 'Roboto', sans-serif;
+ width: 100%;
+ min-height: auto;
+ margin:0;
+}
+
+main {
+
+    font-family: 'Roboto', sans-serif;
+    min-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    flex: 1;
+   
+    
+}
+
+ul {
+
+list-style: none;
+padding-left: 0;
+
+
+}
+
+li {
+    display: block;
+    padding: 20px;
+     
+}
+  
+
+
+/*---Main Styles---*/
+
+.headername {
+
+font-size: xx-large;
+padding-top: 20px;
+
+}
+
+
+h1, .main-nav {
+
+    text-align: center;
+}
+
+
+.main-nav {
+
+ font-size: large;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: darkblue;
+  }
+
+#portfolio {
+
+    margin-top: 0 auto;
+}
+
+
+img {
+    width: 100%;
+
+ 
+} 
+
+.profile-image {
+
+margin-top: 30px;
+
+}
+
+.portfolioitem {
+    color: darkblue;
+}
+
+
+/*---Footer Styles---*/
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(231, 220, 220);
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+       
+        }
+    
+
+.footername, .top {
+
+    font-size: small;
+    color: darkblue;
+}
+
+/*---Media Queries---*/
+ 
+@media (min-width: 768px) {
+
+
+    
+    li {
+        display: inline-block;
+        padding: 20px;
+    }
+       
+
+    .second-container, .profile {
+
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     
+   
+    }
+
+ .item {
+
+    flex-basis: 50%;
+    
+}  
+
+.profile-text {
+    order: -1;
+    flex-basis: 55%;
+    margin-top: 100px;
+   
+}
+
+.profile-image {
+   
+  width: 40%;
+}
+#portfolio {
+
+    flex-basis: 100%;
+}  
+
+    }
+
+
+
+
+    
+
+ @media (min-width: 1024px) {
+ 
+   #navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    }
+     
+}
