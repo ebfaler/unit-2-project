@@ -39,7 +39,7 @@ main {
     
 }
 
-ul {
+.main-nav {
 
     list-style: none;
     padding-left: 0;
@@ -47,13 +47,17 @@ ul {
 
 }
 
-li {
-    display: block;
+.li-top, .li-bottom {
     padding: 20px;
      
 }
   
- 
+ #skills {
+
+    flex-basis: 100%;
+
+ }
+
 /*---Main Styles---*/
 
 .headername {
@@ -74,6 +78,11 @@ h1, .main-nav {
 
     font-size: large;
 
+}
+
+
+.li-skills {
+    color: purple;
 }
 
 
@@ -140,7 +149,7 @@ footer {
 
 
     
-    li {
+    .li-top, .li-bottom {
         display: inline;
         padding: 15px;
     }
