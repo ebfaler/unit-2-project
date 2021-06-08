@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
+    
 
 }
 
@@ -22,7 +24,7 @@
     font-family: 'Roboto', sans-serif;
     width: 100%;
     min-height: auto;
-    margin:0;
+    margin: 0 ;
 }
 
 main {
@@ -57,7 +59,7 @@ li {
 .headername {
 
     font-size: xx-large;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 
 }
 
@@ -169,7 +171,8 @@ footer {
 .profile-text {
     order: -1;
     flex-basis: 55%;
-    margin-top: 100px;
+    margin-top: 80px;
+    padding: 20px;
   
    
 }
@@ -205,11 +208,21 @@ footer {
 
  @media (min-width: 1024px) {
  
-   #navbar {
+   
+    ul {
+        padding-top: 20px;
+    }
+   
+    h1 {
+        padding-left: 20px;
+    }
+
+    #navbar {
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      
 
     }
 
@@ -254,6 +267,18 @@ footer {
        flex-basis: 100%;
    }  
    
-
+   #bottom-nav {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    align-items: center;
+   }
+   
+   .footername, .top {
+   
+     display: none;
+   
+   }
      
 }
