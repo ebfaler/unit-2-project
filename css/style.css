@@ -91,10 +91,10 @@ a {
     color: darkblue;
   }
 
-#portfolio {
+/* #portfolio {
 
     margin-top: 0 auto;
-}
+} */
 
 
 img {
@@ -263,7 +263,7 @@ footer {
        flex-basis: 55%;
        margin-top: 100px;
      
-      
+    
    }
    
    .profile-image {
