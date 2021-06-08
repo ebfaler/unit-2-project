@@ -1,269 +1,180 @@
 * {
- box-sizing: border-box;
-}
-
-
-
-
-/*---Layout Containers---*/
-
-#navbar, main {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    
-
-}
-
-
-#navbar {
-
-    background-color: lightskyblue;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    min-height: auto;
-    margin: 0 ;
-}
-
-main {
-
-    font-family: 'Roboto', sans-serif;
-    min-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: space-between;
-    flex: 1;
-   
-    
-}
-
-.main-nav {
-
-    list-style: none;
-    padding-left: 0;
-
-
-}
-
-.li-top, .li-bottom {
-    padding: 20px;
-     
-}
-  
- #skills {
-
-    flex-basis: 100%;
-
- }
-
-/*---Main Styles---*/
-
-.headername {
-
-    font-size: xx-large;
-    /* padding-top: 20px; */
-
-}
-
-
-h1, .main-nav {
-
-    text-align: center;
-}
-
-
-.main-nav {
-
-    font-size: large;
-
-}
-
-
-.li-skills {
-    color: purple;
-}
-
-
-a {
-    text-decoration: none;
-    color: darkblue;
-  }
-
-/* #portfolio {
-
-    margin-top: 0 auto;
-} */
-
-
-img {
-    width: 100%;
-
- 
-} 
-
-.profile-image {
-
-    margin-top: 30px;
-
-}
-
-.portfolioitem {
-    color: darkblue;
-}
-
-
-/*---Footer Styles---*/
-
-footer {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
-    background-color: rgb(231, 220, 220);
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
-       
-        }
-    
-
-.footername, .top {
-
-    font-size: small;
-    color: darkblue;
-}
-
-#bottom-nav {
-
-    display: none;
-
+    box-sizing: border-box;
    }
-  
-
-/*---Media Queries for Tablet---*/
- 
-@media (min-width: 768px) {
-
-
-    
-    .li-top, .li-bottom {
-        display: inline;
-        padding: 15px;
-    }
-
-
-    .container {
-
-        min-width: 80%;   
-        max-width: 90%;
+   
+   
+   
+   
+   /*---Layout Containers---*/
+   
+   #navbar, main {
+   
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-content: center;
+       
+   
+   }
+   
+   
+   #navbar {
+   
+       background-color: lightskyblue;
+       font-family: 'Roboto', sans-serif;
+       width: 100%;
+       min-height: auto;
+       margin: 0 ;
+   }
+   
+   main {
+   
+       font-family: 'Roboto', sans-serif;
+       min-width: 80%;
+       margin: 0 auto;
+       text-align: center;
+       justify-content: space-between;
+       flex: 1;
+      
+       
+   }
+   
+   .main-nav {
+   
+       list-style: none;
+       padding-left: 0;
+       font-size: large;
+       text-align: center;
+       align-content: center;
+   
+   
+   }
+   
+   .li-top, .li-bottom {
+       padding: 20px;
         
-        }
+   }
+     
+    #skills {
+   
+       flex-basis: 100%;
+   
+    }
+   
+   /*---Main Styles---*/
+   
+   .headername {
+   
+       font-size: xx-large;
+       text-align: center;
+   }
+   
+   
+   .li-skills {
+       color: purple;
+   }
 
-    .second-container, .profile {
+   .skills-list {
 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+       list-style-type: none;
+       padding-left: 0;
+   }
+   
+   
+   a {
+       text-decoration: none;
+       color: darkblue;
+     }
+   
+   
+
+   img {
+       width: 100%;
+   
+    
+   } 
+   
+   .profile-image {
+   
+       margin-top: 30px;
+   
+   }
+   
+   .portfolioitem {
+       color: darkblue;
+   }
+   
+   
+   /*---Footer Styles---*/
+   
+   footer {
+   
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-family: 'Roboto Mono', monospace;
+       background-color: rgb(231, 220, 220);
+       padding: 10px;
+       margin-top: 20px;
+       width: 100%;
+          
+           }
+       
+   
+   .footername, .top {
+   
+       font-size: small;
+       color: darkblue;
+   }
+   
+   #bottom-nav {
+   
+       display: none;
+   
+      }
      
    
-    }
-
- .item {
-
-    flex-basis: calc(50% - 20px);  /*Each flex item takes uo 50% and the margin is 20px*/
+   /*---Media Queries for Tablet---*/
     
-}  
-
-.profile-text {
-    order: -1;
-    flex-basis: 55%;
-    margin-top: 80px;
-    padding: 20px;
-  
+   @media (min-width: 768px) {
    
-}
-
-.profile-image {
    
-  width: 45%;
-}
-
-#portfolio {
-
-    flex-basis: 100%;
-}  
-
-
-#bottom-nav {
-    
- display: flex;
- justify-content: space-between;
- flex-basis: 100%;
- align-items: center;
-}
-
-.footername, .top {
-
-  display: none;
-
-}
-
-    }  
-
-/*----Media Queries for Desktop-----*/
-
- @media (min-width: 1024px) {
- 
+       
+       .li-top, .li-bottom {
+           display: inline;
+           padding: 15px;
+       }
    
-    ul {
-        padding-top: 20px;
-    }
    
-    h1 {
-        padding-left: 20px;
-    }
-
-    #navbar {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      
-
-    }
-
-    .container {
-
-        min-width: 80%;   
-        max-width: 90%;
-        
-        }
-
-
-    .second-container, .profile {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+       .container {
+   
+           min-width: 80%;   
+           max-width: 90%;
+           
+           }
+   
+       .second-container, .profile {
+   
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
         
       
        }
    
     .item {
    
-       flex-basis: calc(33.3% - 20px);  /*Each flex item takes uo 33.3% and the margin is 20px*/
+       flex-basis: calc(50% - 20px);  /*Each flex item takes uo 50% and the margin is 20px*/
        
    }  
    
    .profile-text {
        order: -1;
        flex-basis: 55%;
-       margin-top: 100px;
+       margin-top: 80px;
+       padding: 20px;
      
-    
+      
    }
    
    .profile-image {
@@ -276,8 +187,9 @@ footer {
        flex-basis: 100%;
    }  
    
+   
    #bottom-nav {
-    
+       
     display: flex;
     justify-content: space-between;
     flex-basis: 100%;
@@ -289,5 +201,84 @@ footer {
      display: none;
    
    }
-     
-}
+   
+       }  
+   
+   /*----Media Queries for Desktop-----*/
+   
+    @media (min-width: 1024px) {
+    
+      
+       ul {
+           padding-top: 20px;
+       }
+      
+       h1 {
+           padding-left: 20px;
+       }
+   
+       #navbar {
+   
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+         
+   
+       }
+   
+       .container {
+   
+           min-width: 80%;   
+           max-width: 90%;
+           
+           }
+   
+   
+       .second-container, .profile {
+   
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           
+         
+          }
+      
+       .item {
+      
+          flex-basis: calc(33.3% - 20px);  /*Each flex item takes uo 33.3% and the margin is 20px*/
+          
+      }  
+      
+      .profile-text {
+          order: -1;
+          flex-basis: 55%;
+          margin-top: 100px;
+        
+       
+      }
+      
+      .profile-image {
+         
+        width: 45%;
+      }
+      
+      #portfolio {
+      
+          flex-basis: 100%;
+      }  
+      
+      #bottom-nav {
+       
+       display: flex;
+       justify-content: space-between;
+       flex-basis: 100%;
+       align-items: center;
+      }
+      
+      .footername, .top {
+      
+        display: none;
+      
+      }
+        
+   }
