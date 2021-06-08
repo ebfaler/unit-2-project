@@ -9,20 +9,20 @@
 
 #navbar, main {
 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 
 #navbar {
 
- background-color: lightskyblue;
- font-family: 'Roboto', sans-serif;
- width: 100%;
- min-height: auto;
- margin:0;
+    background-color: lightskyblue;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: auto;
+    margin:0;
 }
 
 main {
@@ -39,8 +39,8 @@ main {
 
 ul {
 
-list-style: none;
-padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 
 
 }
@@ -51,14 +51,13 @@ li {
      
 }
   
-
-
+ 
 /*---Main Styles---*/
 
 .headername {
 
-font-size: xx-large;
-padding-top: 20px;
+    font-size: xx-large;
+    padding-top: 20px;
 
 }
 
@@ -71,7 +70,7 @@ h1, .main-nav {
 
 .main-nav {
 
- font-size: large;
+    font-size: large;
 
 }
 
@@ -95,7 +94,7 @@ img {
 
 .profile-image {
 
-margin-top: 30px;
+    margin-top: 30px;
 
 }
 
@@ -126,30 +125,44 @@ footer {
     color: darkblue;
 }
 
-/*---Media Queries---*/
+#bottom-nav {
+
+    display: none;
+
+   }
+  
+
+/*---Media Queries for Tablet---*/
  
 @media (min-width: 768px) {
 
 
     
     li {
-        display: inline-block;
-        padding: 20px;
+        display: inline;
+        padding: 15px;
     }
-       
+
+
+    .container {
+
+        min-width: 80%;   
+        max-width: 90%;
+        
+        }
 
     .second-container, .profile {
 
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
      
    
     }
 
  .item {
 
-    flex-basis: 50%;
+    flex-basis: calc(50% - 20px);  /*Each flex item takes uo 50% and the margin is 20px*/
     
 }  
 
@@ -157,33 +170,90 @@ footer {
     order: -1;
     flex-basis: 55%;
     margin-top: 100px;
+  
    
 }
 
 .profile-image {
    
-  width: 40%;
+  width: 45%;
 }
+
 #portfolio {
 
     flex-basis: 100%;
 }  
 
-    }
 
-
-
-
+#bottom-nav {
     
+ display: flex;
+ justify-content: space-between;
+ flex-basis: 100%;
+ align-items: center;
+}
+
+.footername, .top {
+
+  display: none;
+
+}
+
+    }  
+
+/*----Media Queries for Desktop-----*/
 
  @media (min-width: 1024px) {
  
    #navbar {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
     }
+
+    .container {
+
+        min-width: 80%;   
+        max-width: 90%;
+        
+        }
+
+
+    .second-container, .profile {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+      
+       }
+   
+    .item {
+   
+       flex-basis: calc(33.3% - 20px);  /*Each flex item takes uo 33.3% and the margin is 20px*/
+       
+   }  
+   
+   .profile-text {
+       order: -1;
+       flex-basis: 55%;
+       margin-top: 100px;
+     
+      
+   }
+   
+   .profile-image {
+      
+     width: 45%;
+   }
+   
+   #portfolio {
+   
+       flex-basis: 100%;
+   }  
+   
+
      
 }
