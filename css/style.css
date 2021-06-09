@@ -72,11 +72,14 @@
    
    .li-skills {
        color: purple;
+       text-align: left;
+    
    }
 
    .skills-list {
-/* 
-       list-style-type: none; */
+
+       display: inline-block;
+       list-style-position: inside;
        padding-left: 0;
    }
    
@@ -278,7 +281,7 @@
       .bottom-nav-menu {
 
        padding: 0;
-       
+
       }
       
       .footername, .top {
